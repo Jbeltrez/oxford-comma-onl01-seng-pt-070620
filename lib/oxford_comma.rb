@@ -4,10 +4,10 @@ def oxford_comma(array)
   when array.length == 2 
   array.join(" and ")
   when array.length == 3 
-  array.join(",")
   new_last_element = "and #{array[-1]}"
   array.pop
-  array << 
+  array << new_last_element 
+  array.join(",")
 end
 
 end  
