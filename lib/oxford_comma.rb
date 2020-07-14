@@ -1,13 +1,12 @@
 def oxford_comma(array)
-  if array.length == 1 
+  case array.length == 1 
     array.join
-  elsif array.length == 2 
+  when array.length == 2 
   array.join(" and ")
-  elsif array.length == 3 
+  when array.length == 3 
   array.join(",")
   new_last_element = "and #{array[-1]}"
   array << new_last_element
 end 
 return array
- 
 end  
