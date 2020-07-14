@@ -8,5 +8,5 @@ def oxford_comma(array)
   new_last_element = "and #{array[-1]}"
   array << new_last_element
 end 
-return array
+
 end  
